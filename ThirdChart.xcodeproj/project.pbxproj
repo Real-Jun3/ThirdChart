@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		04A69E2225FC993600C33793 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A69E2125FC993600C33793 /* Preview Assets.xcassets */; };
 		04A69E2D25FC993600C33793 /* ThirdChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A69E2C25FC993600C33793 /* ThirdChartTests.swift */; };
 		04A69E3825FC993600C33793 /* ThirdChartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A69E3725FC993600C33793 /* ThirdChartUITests.swift */; };
+		04A69E4A25FC9B7B00C33793 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 04A69E4925FC9B7B00C33793 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A69E4A25FC9B7B00C33793 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +148,9 @@
 			dependencies = (
 			);
 			name = ThirdChart;
+			packageProductDependencies = (
+				04A69E4925FC9B7B00C33793 /* SwiftUICharts */,
+			);
 			productName = ThirdChart;
 			productReference = 04A69E1725FC993500C33793 /* ThirdChart.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 04A69E0E25FC993500C33793;
+			packageReferences = (
+				04A69E4825FC9B7B00C33793 /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+			);
 			productRefGroup = 04A69E1825FC993500C33793 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -574,6 +582,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04A69E4825FC9B7B00C33793 /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AfrazCodes/SwiftUICharts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04A69E4925FC9B7B00C33793 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A69E4825FC9B7B00C33793 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04A69E0F25FC993500C33793 /* Project object */;
 }
